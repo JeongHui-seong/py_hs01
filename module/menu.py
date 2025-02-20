@@ -10,4 +10,5 @@ day = soup.select(".menu-tbl .day")
 date = soup.select(".menu-tbl .date")
 
 for date, day, menu in zip(date, day, menu):
-    print(date.text, day.text + '\n', menu.text)
+    print(date.text, day.text)
+    print(menu.text.strip() + '\n')
